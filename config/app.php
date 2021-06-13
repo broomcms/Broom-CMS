@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Webrussell CMS'),
+    'name' => env('APP_NAME', 'Broom CMS'),
 
     /*
     |--------------------------------------------------------------------------

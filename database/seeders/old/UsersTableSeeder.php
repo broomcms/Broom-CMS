@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
             [
                 'id'                 => 1,
                 'name'               => 'Patrick Simard',
-                'email'              => 'patrick.simard@webrussell.com',
+                'email'              => 'test@broomcms.com',
                 'password'           => bcrypt('qpalqpal'),
                 'remember_token'     => null,
                 'approved'           => 1,

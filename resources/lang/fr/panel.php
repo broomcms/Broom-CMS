@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'site_title' => 'CMS WebRussell',
+    'site_title' => 'Broom CMS',
 ];
