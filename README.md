@@ -31,7 +31,6 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
 ## Pseudo/passe de la base de donnée local
  - root
  - secret
- - Peux être changer dans le seed avant l'installation
 
 ## Installation en prod (À tester)
  - télécharger le dossier broom composer
