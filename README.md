@@ -16,7 +16,7 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
 
 
 
-## Installation manuel local
+## Installation local
  - Créé un dossier C:\dev\broomcms
  - git clone https://github.com/patwebrussell/Broom-CMS.git ./
  - Assurez-vous de la bonne structure de dossier
@@ -28,7 +28,12 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
  - composer install
  - php artisant migrate --seed
 
-## Install en prod
+## Pseudo/passe de la base de donnée local
+ - root
+ - secret
+ - 
+
+## Installation en prod (À tester)
  - télécharger le dossier broom composer
  - ajouter le contenue du dossier à la racine de votre projet
  - assurez vous d'avoir un htaccess qui pointe ver le dossier public
@@ -36,15 +41,11 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
 
 
 
-## Default Login
+## Login par défaut comme super admin
  - test@broomcms.com
  - qpalqpal
 
-
-
-## BD
- - root
- - secret
+Peux être changer dans le seed avant l'installation
 
 
 
@@ -81,7 +82,7 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
 
 
 
-### Boostrap
+### Boostrap Admin
  - Finir de formater le thème Admin LTE v3
  - Ajouter un menu en haut à droite pour profile, etc.
  - Bouger la recherche dans le header blanc
