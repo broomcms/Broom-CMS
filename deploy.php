@@ -4,10 +4,10 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // On set les variables de départ
-set('application', 'WebRussell');
+set('application', 'BroomCMS');
 set('ssh_multiplexing', true);
 set('default_stage', 'dev');
-set('repository', 'git@gitlab.webrussell.com:webrussell/cms.git');
+set('repository', 'git@github.com:patwebrussell/Broom-CMS.git');
 set('git_tty', false);
 
 // Fichiers et dossiers partager
@@ -40,7 +40,7 @@ host('dev')
     ->port (22)
     ->hostname('68.71.55.18')
     ->stage('dev')
-    ->set('deploy_path', '/home/cms/public_html');
+    ->set('deploy_path', '/home/broomcms/public_html');
 
 // Les tâches dans l'ordre d'execution
 task('deploy', [
@@ -63,13 +63,13 @@ task('deploy', [
 
 // On met le bon owner aux fichiers
 task('deploy:owner', function () {
-    run('chown -R cms:cms /home/cms/public_html');
+    run('chown -R broomcms:broomcms /home/broomcms/public_html');
 });
 
 // On repart FPM pour éviter des erreurs
 task('reload:php-fpm', function () {
     run('/scripts/restartsrv_apache_php_fpm');
-    run('cd /home/cms/public_html/current && php artisan migrate');
+    run('cd /home/broomcms/public_html/current && php artisan migrate');
 });
 
 // Execution des tâches supplémentaire

@@ -14,16 +14,16 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('users')->delete();
-        
+
         \DB::table('users')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'name' => 'Patrick Simard',
-                'email' => 'patrick.simard@webrussell.com',
+                'email' => 'test@broomcms.com',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$qiOIbBlASwkXnAbEfZMk/uuz0MUyOwzdYirWaFa9kYRAqoEEdCTwW',
                 'remember_token' => 'f8MBdN6NPX63wfFRAGCKqmQMpPbjczVLO1xMojc6XDcBFhRSewC9VYXQqZ6I',
@@ -36,7 +36,7 @@ class UsersTableSeeder extends Seeder
                 'deleted_at' => NULL,
             ),
         ));
-        
-        
+
+
     }
 }

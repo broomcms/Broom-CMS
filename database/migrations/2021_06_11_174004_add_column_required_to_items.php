@@ -14,7 +14,7 @@ class AddColumnRequiredToItems extends Migration
     public function up()
     {
         Schema::table('items', function (Blueprint $table) {
-            $table->string('required');
+            $table->string('required')->nullable();
         });
     }
 

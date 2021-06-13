@@ -1,41 +1,39 @@
-# CMS Webrussell
+# Broom CMS
+Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'objectif de la plateforme est de créé une zone admin qui peut servir autemps de headless CMS que de bases pour CMS standard. Le projet se veut facilement éditable pour répondre à tous les besoins qu'un programmeur peut rencontrer tout en conservant une approche sur mesure et en fournissant un produit fini au client. 
+
 
 
 ## Structure
- - HomeStead (contient la box vagrant)
- - cms (contiens l'app Laravel)
+ - vagrant (contient la box vagrant)
+ - broomcms (contiens l'app Laravel)
+ - phpmyadmin (contiens PHPMyAdmin)
+
 
 
 ## Install
- - Télécharger HomStead ici: https://gitlab.webrussell.com/webrussell/homestead
- - Créé un dossier C:\dev\WebRussell
- - Ajouter le dossier Homestead
- - Vérifier la validiter du fichier Homestead.yaml
- - ouvrir un terminal et cloner le Repo
- - git clone https://gitlab.webrussell.com/webrussell/cms.git
+ - Créé un dossier C:\dev\broomcms
+ - git clone https://github.com/patwebrussell/Broom-CMS.git ./
  - Assurez-vous de la bonne structure de dossier
  - dans le terminal, taper les commandes suivantes:
- - cd homestead
+ - cd vagrant
  - .vagrant up
  - .vagrant ssh
- - cd cms
+ - cd BroomCMS
  - composer install
  - php artisant migrate --seed
 
 
-## Login
- - patrick.simard@webrussell.com
+
+## Default Login
+ - test@broomcms.com
  - qpalqpal
+
 
 
 ## BD
  - root
  - secret
 
-
-## Deploy
- - dep deploy dev
- - Creds root du server
 
 
 # TODO
@@ -70,6 +68,7 @@
  - API pour les cruds DONE
 
 
+
 ### Boostrap
  - Finir de formater le thème Admin LTE v3
  - Ajouter un menu en haut à droite pour profile, etc.
@@ -77,15 +76,18 @@
  - Menu accordéon
 
 
+
 ### Dashboard
  - Formater les widgets
  - Créer plus de widget?
 
 
+
 ### Gestion des pages / variables
  - Créé le formulaire à partir du gabarit
- - Sauver les résultats des variables
+ - Sauver les résultats des variables 
  - Créé des fonctions qui permet de récupérer facilement le contenu
+
 
 
 ### Boutique 
@@ -94,12 +96,13 @@
  - Notifier le client quand un changement de statut se produit
 
 
-### Features
- - Créé un système de ticket connecté au portail (utiliser mon système de messagerie?)
- - Créé un calendrier connecté au système de RDV
- - Créé un système de modification de langue
-
 
 ### Frontend
  - Créé un one page boostrap
  - Exemple d'intégration des modules
+
+
+
+### Features
+ - Créé un système d'activation/désactivation des modules
+ - Créé un processus d'installation/update client - done (À sécuriser)
