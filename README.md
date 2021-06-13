@@ -10,7 +10,13 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
 
 
 
-## Installation manuel 
+## Environement de developpement local vagrant
+ - https://broomcms.test 
+ - https://broomdb.test
+
+
+
+## Installation manuel local
  - Créé un dossier C:\dev\broomcms
  - git clone https://github.com/patwebrussell/Broom-CMS.git ./
  - Assurez-vous de la bonne structure de dossier
@@ -22,13 +28,10 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
  - composer install
  - php artisant migrate --seed
 
-## Install automatique
- - Créé un dossier C:\dev\broomcms
- - git clone https://github.com/patwebrussell/Broom-CMS.git ./
- - Assurez-vous de la bonne structure de dossier
- - dans le terminal, taper les commandes suivantes:
- - cd vagrant
- - .vagrant up
+## Install en prod
+ - télécharger le dossier broom composer
+ - ajouter le contenue du dossier à la racine de votre projet
+ - assurez vous d'avoir un htaccess qui pointe ver le dossier public
  - visitez /install
 
 
