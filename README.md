@@ -22,11 +22,11 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
  - Assurez-vous de la bonne structure de dossier
  - dans le terminal, taper les commandes suivantes:
  - cd vagrant
- - .vagrant up
- - .vagrant ssh
+ - vagrant up
+ - vagrant ssh
  - cd BroomCMS
  - composer install
- - php artisant migrate --seed
+ - php artisan migrate --seed
 
 ## Pseudo/passe de la base de donnée local
  - root
