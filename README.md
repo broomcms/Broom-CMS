@@ -44,8 +44,7 @@ Broom CMS est un 'Content Management System' bâtie entièrement en Laravel. L'o
 ## Login par défaut comme super admin
  - test@broomcms.com
  - qpalqpal
-
-Peux être changer dans le seed avant l'installation
+ - Peux être changer dans le seed avant l'installation
 
 
 
